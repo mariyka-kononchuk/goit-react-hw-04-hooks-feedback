@@ -5,11 +5,6 @@ import FeedbackOptions from './components/FeedbackOptions';
 import Statistics from './components/Statistics';
 import Notification from './components/Notification';
 
-// const useFeedback = (key) = {
-//   const [state, setState] = useState(() => setPage(state=>state + 1));
-//   return [state, setState];
-// }
-
 export default function App() {
   
   const [good, setGood] = useState(0);
