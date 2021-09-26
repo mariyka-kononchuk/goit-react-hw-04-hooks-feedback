@@ -26,7 +26,9 @@ export default function App() {
         return;
     }
   }
- 
+  //create object to use it in props "options"
+  const feedback = {good, neutral, bad}
+
   const countTotalFeedback = () => {
     const total = bad + neutral + good;
     return total;
@@ -43,7 +45,7 @@ export default function App() {
 
         <Section title="Please leave feedback">
           <FeedbackOptions
-            options={['good', 'neutral', 'bad']}
+           options={Object.keys(feedback)}
             onLeaveFeedback={leaveFeedback}
           />
         </Section>
